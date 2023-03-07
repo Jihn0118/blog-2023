@@ -101,7 +101,7 @@ const viewer1 = Editor.factory({
 });
 
   function showPage(pageNum){
-    fetch(no + ".md")
+    fetch(pageNum + ".md")
     .then(response => response.text()) // 응답에서 본문만 취한다.
     .then(text => {
       viewer1.setMarkdown(text);
